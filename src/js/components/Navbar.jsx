@@ -1,12 +1,18 @@
 import React from "react";
 
+const bootstrapNavbarSelect = "Start Bootstrap"
+const homeNavbarSelect = "Home"
+const aboutNavbarSelect = "About"
+const servicesNavbarSelect = "Services"
+const contactNavbarSelect = "Contact"
+
 export const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            {bootstrapNavbarSelect}
           </a>
           <button
             className="navbar-toggler"
@@ -20,18 +26,18 @@ export const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
+            <div className="navbar-nav ms-auto">
               <a className="nav-link active" aria-current="page" href="#">
-                Home
+                {homeNavbarSelect}
+              </a>
+              <a className="nav-link me-auto" href="#">
+                {aboutNavbarSelect}
               </a>
               <a className="nav-link" href="#">
-                Features
+                {servicesNavbarSelect}
               </a>
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
-              <a className="nav-link disabled" aria-disabled="true">
-                Disabled
+              <a className="nav-link" href = "#">
+                {contactNavbarSelect}
               </a>
             </div>
           </div>

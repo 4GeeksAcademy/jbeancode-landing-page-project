@@ -1,18 +1,21 @@
 import React from "react";
 
+const jumbotronTitle = "A Warm Welcome"
+const jumbotronDescription = "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+const jumbrotronButtonName = "Call to action!"
+
+
 export const Jumbotron = () => {
   return (
     <div>
-      <div class="container-fluid py-5">
+      <div class="container-fluid py-5 bg-secondary-subtle">{" "}
         {" "}
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>{" "}
+        <h1 class="display-5 fw-bold">{jumbotronTitle}</h1>
         <p class="col-md-8 fs-4">
-          Using a series of utilities, you can create this jumbotron, just like
-          the one in previous versions of Bootstrap. Check out the examples
-          below for how you can remix and restyle it to your liking.
+          {jumbotronDescription}
         </p>{" "}
         <button class="btn btn-primary btn-lg" type="button">
-          Example button
+          {jumbrotronButtonName}
         </button>{" "}
       </div>
     </div>
